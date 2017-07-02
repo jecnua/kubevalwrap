@@ -31,11 +31,12 @@ fi
 #
 # URL=`aws ecr describe-repositories | grep $NAME_REPO | grep repositoryUri | cut -d ':' -f 2 | cut -d '"' -f 2`
 # echo "Repository url: $URL"
+URL=$NAME_REPO
 
 cat << EOF > env.sh
 #!/bin/bash
 export DOCKER_IMAGE=$NAME_REPO
-# export URL_REPO=$URL
+export URL_REPO=$URL
 EOF
 
 echo "Env file generated in env.sh"

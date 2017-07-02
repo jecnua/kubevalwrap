@@ -1,3 +1,3 @@
 #!/bin/bash
-export DOCKER_IMAGE=jecnua/kubevalwrap
-# export URL_REPO=
+export DOCKER_IMAGE=docker/kubevalwrap
+export URL_REPO=docker/kubevalwrap
