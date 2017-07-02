@@ -18,3 +18,8 @@ To run it with a file (example):
 
     docker run -it --rm -v $PWD:/tmp jecnua/kubevalwrap:dev-latest \
       kubeval -v 1.7.0 /tmp/deploy_svc.yaml
+
+# Notes
+
+- Tested on travis with [dgoss](https://github.com/aelsabbahy/goss/tree/master/extras/dgoss)
+- MIT license
