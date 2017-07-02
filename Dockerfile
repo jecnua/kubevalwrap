@@ -3,15 +3,11 @@ FROM golang:1.8.3
 MAINTAINER jecnua "fabrizio.sabatini.it@gmail.com"
 
 WORKDIR /go/src/app
-
-# RUN wget https://github.com/garethr/kubeval/releases/download/0.1.0/kubeval-darwin-amd64.tar.gz
-# RUN tar xf kubeval-darwin-amd64.tar.gz
 RUN git clone https://github.com/garethr/kubeval.git
 WORKDIR /go/src/app/kubeval/
 RUN go get github.com/garethr/kubeval/
 RUN make linux
 RUN ln -s /go/src/app/kubeval/bin/linux/amd64/kubeval kubeval
-# RUN cp bin/darwin/amd64/kubeval /usr/local/bin
 
 # ENV
 

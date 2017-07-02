@@ -4,6 +4,16 @@ Just a docker wrapper around kubeval
 
 - [garethr/kubeval](https://github.com/garethr/kubeval)
 
-To run it:
+## To build
 
-    docker run -it --rm -v $PWD:/tmp docker/kubevalwrap:dev-latest -v 1.7.0 /tmp/deploy_svc.yaml
+    make
+
+## To use
+
+To test:
+
+    docker run -it --rm jecnua/kubevalwrap:dev-latest --help
+
+To run it with a file:
+
+    docker run -it --rm -v $PWD:/tmp jecnua/kubevalwrap:dev-latest -v 1.7.0 /tmp/deploy_svc.yaml
