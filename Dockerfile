@@ -30,4 +30,4 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
   com.jecnua.docker.dockerfile="/Dockerfile" \
   com.jecnua.license=""
 
-ENTRYPOINT ["/go/src/app/kubeval/bin/linux/amd64/kubeval"]
+CMD ["/go/src/app/kubeval/bin/linux/amd64/kubeval", "--help"]

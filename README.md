@@ -12,8 +12,9 @@ Just a docker wrapper around kubeval
 
 To test:
 
-    docker run -it --rm jecnua/kubevalwrap:dev-latest --help
+    docker run -it --rm jecnua/kubevalwrap:dev-latest kubeval --help
 
 To run it with a file:
 
-    docker run -it --rm -v $PWD:/tmp jecnua/kubevalwrap:dev-latest -v 1.7.0 /tmp/deploy_svc.yaml
+    docker run -it --rm -v $PWD:/tmp jecnua/kubevalwrap:dev-latest \
+      kubeval -v 1.7.0 /tmp/deploy_svc.yaml

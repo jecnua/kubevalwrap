@@ -1,8 +1,8 @@
-# command:
-#   curl localhost:80:
-#     title: Checking main entrypoint
-#     exit-status: 0
-#     stdout:
-#     - 'example'
-#     stderr: []
-#     timeout: 1000
+command:
+  kubeval --help:
+    title: Checking help
+    exit-status: 0
+    stdout:
+    - 'help for kubeval'
+    stderr: []
+    timeout: 1000
