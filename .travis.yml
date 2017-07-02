@@ -5,7 +5,7 @@ services:
 - docker
 
 language:
-- ruby
+- go
 
 before_install:
 - curl -L https://goss.rocks/install | sudo sh
