@@ -1,5 +1,7 @@
 # kubeval docker wrapper
 
+[![Build Status](https://travis-ci.org/jecnua/kubevalwrap.svg?branch=master)](https://travis-ci.org/jecnua/kubevalwrap)
+
 Just a docker wrapper around kubeval
 
 - [garethr/kubeval](https://github.com/garethr/kubeval)
