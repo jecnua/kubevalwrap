@@ -1,6 +1,7 @@
 # kubeval docker wrapper
 
 [![Build Status](https://travis-ci.org/jecnua/kubevalwrap.svg?branch=master)](https://travis-ci.org/jecnua/kubevalwrap)
+![status](https://img.shields.io/badge/project_status-active-green.svg)
 
 Just a docker wrapper around [garethr/kubeval](https://github.com/garethr/kubeval).
 
@@ -12,11 +13,14 @@ Just a docker wrapper around [garethr/kubeval](https://github.com/garethr/kubeva
 
 To test:
 
-    docker run -it --rm jecnua/kubevalwrap:dev-latest kubeval --help
+    docker run -it --rm \
+      jecnua/kubevalwrap:dev-latest \
+      kubeval --help
 
 To run it with a file (example):
 
-    docker run -it --rm -v $PWD:/tmp jecnua/kubevalwrap:dev-latest \
+    docker run -it --rm -v $PWD:/tmp \
+      jecnua/kubevalwrap:dev-latest \
       kubeval -v 1.7.0 /tmp/deploy_svc.yaml
 
 # Notes
