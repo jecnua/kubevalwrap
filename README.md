@@ -5,19 +5,19 @@
 
 Just a docker wrapper around [garethr/kubeval](https://github.com/garethr/kubeval).
 
-## To build
+## Build and use locally
+
+Build:
 
     make
 
-### To use locally
-
-To test:
+Test:
 
     docker run -it --rm \
       jecnua/kubevalwrap:dev-latest \
       kubeval --help
 
-To run it with a file (example):
+To run it with on file (example):
 
     docker run -it --rm -v $PWD:/tmp \
       jecnua/kubevalwrap:dev-latest \
